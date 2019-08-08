@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(49, 27, 0, 1),
+      backgroundColor: const Color.fromRGBO(12, 22, 51, 1),
       body: GestureDetector(
         onPanUpdate: (DragUpdateDetails drag) {
           setState(() {
@@ -93,12 +93,12 @@ class _MyHomePageState extends State<MyHomePage>
           children: [
             Positioned.fill(
               child: FlareTiltWidget(
-                'assets/Hamilton.flr',
+                'assets/lawfully.flr',
                 fit: BoxFit.contain,
                 alignment: Alignment.center,
                 pitch: pitch,
                 yaw: yaw,
-                depth: (depth?.value ?? 0) * 3,
+                depth: (depth?.value ?? 0) * 6,
               ),
             ),
           ],

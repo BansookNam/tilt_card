@@ -63,7 +63,7 @@ class TiltArtboard extends FlutterActorArtboard {
 
         Matrix4 tiltTransform = Matrix4.copy(transform);
         tiltTransform.multiply(
-            Matrix4.translationValues(0, 0, -100.0 - index * 35.0 * tiltDepth));
+            Matrix4.translationValues(0, 0, -100.0 - index * 8 * tiltDepth));
         (drawable as TiltDrawable).tiltTransform = tiltTransform;
       }
     }

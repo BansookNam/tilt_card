@@ -115,7 +115,7 @@ class FlareTiltRenderObject extends FlareRenderBox {
     TiltArtboard artboard = TiltActor.instanceArtboard(actor);
     artboard.initializeGraphics();
     _artboard = artboard;
-    _idle = _artboard.getAnimation("idle");
+    _idle = _artboard.getAnimation("lawfully_animation");
 
     _artboard.advance(0.0);
     markNeedsPaint();
